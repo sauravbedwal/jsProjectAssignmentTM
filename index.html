@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="container">
+       <!-- Header start here -->
+       <div class="head">
+        <h2 id="heading">Task Management Application</h2>
+        </div>
+
+        <!-- Header End here -->
+        <div class="task">
+            <input type="text" class="input" id="input" placeholder="Enter the Task name">
+            <div id="error">
+
+            </div>
+            <button class="task-btn">Task</button>
+        </div>
+
+       
+        <!-- Main Content Start -->
+        <div class="main">
+
+          <div class="open">
+            <h3 class="heading">open</h3> 
+
+          </div>
+
+          <div class="progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h3 class="heading">in progress</h3>
+          </div>
+
+          <div class="review" ondrop="drop(event)" ondragover="allowDrop(event)">
+           <review class="heading">in review</h3>
+          </div>
+
+          <div class="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+             <h3 class="heading"> done </h3>
+          </div>
+        </div>
+        <!-- Main Content End -->
+
+    </div>
+    
+</body>
+</html>

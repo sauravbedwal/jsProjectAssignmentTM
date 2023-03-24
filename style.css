@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+
+.container{
+    background-color: black;
+    width: 1095px;
+    height: 654px;
+}
+.head{
+    padding: 20px;
+    
+  
+}
+#heading{
+    text-align: center;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 25px;
+    gap: 10px;
+    height: 400px;
+    margin-top: 20px;
+  
+  
+}
+
+.open, .progress, .review , .done{
+    background-color: rgba(255,255,255,0.6);
+    font-weight: 800;
+    overflow: auto;
+}
+.heading{
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.input{
+    background-color: bisque;
+    width: 300px;
+    height: 25px;
+}
+.task-btn{
+    width:50px;
+    margin: 10px;
+    margin-left: 123px;
+}
+.task{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   justify-content: center;
+}
+.task_item{
+    border: 1px solid black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+    grid-template-rows: 1fr 1.5rem;
+    grid-template-areas: "tname tname"
+                         "description description"
+                         "save edit";
+    grid-row-gap: 0.2rem;
+}
+.tname{
+    grid-area: tname;
+}
+.description{
+    grid-area: description;
+}
+.save{
+    grid-area: save;
+}
+.edit{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border: 0.3rem solid orange;
+    border-radius: 50%;
+    grid-area: edit;
+    justify-self: end;
+    align-self: flex-end;
+}
+#error{
+    color:#fff
+}
