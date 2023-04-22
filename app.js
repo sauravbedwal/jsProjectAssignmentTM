@@ -2,8 +2,8 @@ let taskbtn = document.querySelector(".task-btn");
 
 let open = document.querySelector(".open");
 let i = 0;
-taskbtn.addEventListener('click',submitForm 
-)
+taskbtn.addEventListener('click', submitForm);
+
 function show(elem) {
     const description = elem.querySelector('.description');
     const save = elem.querySelector('.save');
@@ -30,17 +30,18 @@ function drop(ev) {
 function allowDrop(ev) {
     ev.preventDefault();
 }
-function submitForm(){
+
+function submitForm() {
     let taskInput = document.getElementById("input").value;
-    let errorMessage= document.getElementById("error");
-    if (taskInput.length===0){
-        errorMessage.innerHTML="Please Enter some text";
+    let errorMessage = document.getElementById("error");
+    if (taskInput.length === 0) {
+        errorMessage.innerHTML = "Please Enter some text";
         return;
-    }else {
-        errorMessage.innerHTML="";
+    } else {
+        errorMessage.innerHTML = "";
     }
     const maindv = document.createElement('div');
-    console.log(taskInput);
+    // console.log(taskInput);
     const tname = document.createElement('div');
     const edit = document.createElement('div');
     const description = document.createElement('div');
