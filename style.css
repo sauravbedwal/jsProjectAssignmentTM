@@ -27,6 +27,7 @@ body{
 
 #heading{
     text-align: center;
+    /* font-style: italic; */
 }
 
 .main{
@@ -42,33 +43,38 @@ body{
     background-color: rgba(255,255,255,0.6);
     font-weight: 800;
     overflow: auto;
-    padding: 5px;
+    /* padding: 5px;
     border-radius: 5px;
-    box-shadow: 1px 1px 10px 1px #888888;
+    box-shadow: 1px 1px 10px 1px #888888; */
 }
 
 .heading{
     text-transform: uppercase;
     margin-left: 5px;
     margin-top: 5px;
+    /* text-shadow: 1px 3px 3px rgb(23, 23, 49); */
 }
 
 .input{
-    background-color: rgb(240, 223, 203);
-    width: 30vw;
-    padding: 10px;
+    background-color: bisque;
+    width: 40vw;
+    padding: 15px;
     margin-top: 30px;
-    border-radius: 5px;
-    font-weight: 800;
+    /* border-radius: 20px; */
+    /* box-shadow: 1px 2px 3px;
+    font-weight: 800; */
 }
 
 .task-btn{
-    width: 6vw;
+    width: 20%;
+    height: 50px;
     padding: 5px;
     margin: auto;
     margin-top: -45px;
-    border-radius: 5px;
-    font-size:medium;
+    /* border-radius: 5px; */
+    font-size:large;
+    font-weight: 700;
+    /* box-shadow: 2px 4px 6px; */
 }
 
 .task{
@@ -87,7 +93,7 @@ body{
                          "description description"
                          "save edit";
     grid-row-gap: 0.2rem;
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 .tname{
     grid-area: tname;

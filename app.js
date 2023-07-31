@@ -10,6 +10,7 @@ function show(elem) {
     description.contentEditable = true;
     description.focus();
     save.style.display = "block";
+    localStorage.setItem("description", JSON.stringify(description.textContent));
 }
 function sdescription(elem) {
     const description = elem.querySelector('.description');
@@ -41,7 +42,6 @@ function submitForm() {
         errorMessage.innerHTML = "";
     }
     const maindv = document.createElement('div');
-    // console.log(taskInput);
     const tname = document.createElement('div');
     const edit = document.createElement('div');
     const description = document.createElement('div');
@@ -63,5 +63,46 @@ function submitForm() {
     open.append(maindv);
     document.getElementById("input").value = "";
     i++;
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const fax = document.querySelectorAll(".tname");
+// const data = [];
+// fax.forEach((elem) => {
+//     data.push(elem.innerText);
+// });
+// localStorage.setItem("heading", JSON.stringify(data));
+// (() => {
+//     const items = JSON.parse(localStorage.getItem("heading"));
+//     items.forEach((item) => {
+//         taskInput = item;
+//     });
+// })();
